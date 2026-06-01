@@ -116,7 +116,7 @@ namespace Chatbot_WPF
             // Password Recognition
             if (message.Contains("password"))
             {
-                currentTopic = "password";
+                currentTopic = "Password";
 
                 return passwordTips[random.Next(passwordTips.Count)];
             }
@@ -124,7 +124,7 @@ namespace Chatbot_WPF
             // Phishing Recognition
             if (message.Contains("phishing"))
             {
-                currentTopic = "phishing";
+                currentTopic = "Phishing";
 
                 return phishingTips[random.Next(phishingTips.Count)];
             }
@@ -132,7 +132,7 @@ namespace Chatbot_WPF
             // Scam Recognition
             if (message.Contains("scam"))
             {
-                currentTopic = "scam";
+                currentTopic = "Scam";
 
                 return "Be cautious of offers that seem too good to be true.";
             }
@@ -140,9 +140,9 @@ namespace Chatbot_WPF
             // Privacy Recognition
             if (message.Contains("privacy"))
             {
-                currentTopic = "privacy";
+                currentTopic = "Privacy";
 
-                userMemory["interest"] = "privacy";
+                userMemory["interest"] = "Privacy";
 
                 return privacyTips[random.Next(privacyTips.Count)];
             }
@@ -154,13 +154,13 @@ namespace Chatbot_WPF
             {
                 switch (currentTopic)
                 {
-                    case "password":
+                    case "Password":
                         return passwordTips[random.Next(passwordTips.Count)];
 
-                    case "phishing":
+                    case "Phishing":
                         return phishingTips[random.Next(phishingTips.Count)];
 
-                    case "privacy":
+                    case "Privacy":
                         return privacyTips[random.Next(privacyTips.Count)];
 
                     default:
@@ -185,7 +185,7 @@ namespace Chatbot_WPF
             }
 
             // Recall user interests
-            if (message.Contains("what do you remember"))
+            if (message.Contains("What do you remember"))
             {
                 if (userMemory.ContainsKey("interest"))
                 {

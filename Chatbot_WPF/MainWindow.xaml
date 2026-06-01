@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Chatbot_WPF"
         mc:Ignorable="d"
-        Title="Cybersecurity Awareness Chatbot" Height="600" Width="900"
+        Title="Cybersecurity Chatbot" Height="600" Width="900"
         WindowStartupLocation="CenterScreen"
         Background="#f4f6f8">
 
@@ -30,14 +30,14 @@
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto"/>
                     <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions> 
+                </Grid.ColumnDefinitions>
 
-                <!-- ASCII Art as TextBlock 
+                <!-- ASCII Art as TextBlock -->
                 <TextBlock x:Name="AsciiArt" Grid.Column="0" 
                            FontFamily="Consolas" FontSize="10" 
                            Foreground="#3498DB" TextWrapping="Wrap"
-                           Text="╔════════════════════════════════════════╗&#x0A;║      CYBERSECURITY AWARENESS BOT       ║&#x0A;║         Stay Safe Online! 🛡️          ║&#x0A;╚═══════════════════════════════════════╝"
-                           Margin="5"/> -->
+                           Text="╔════════════════════════════════════════╗&#x0A;║            CYBERSECURITY BOT           ║&#x0A;║            Stay Safe Online!           ║&#x0A;╚════════════════════════════════════════╝"
+                           Margin="5"/> 
 
                 <!-- Title -->
                 <StackPanel Grid.Column="1" VerticalAlignment="Center" Margin="20,0,0,0">
