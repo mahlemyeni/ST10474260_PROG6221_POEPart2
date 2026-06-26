@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+﻿   <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
@@ -16,6 +16,8 @@
 
   <ItemGroup>
     <PackageReference Include="System.Windows.Extensions" Version="10.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.10" />
+	<PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="8.0.10" />
   </ItemGroup>
 
   <ItemGroup>
@@ -24,4 +26,4 @@
     <Resource Include="PROGTITLE_IMAGE.jpg" />
   </ItemGroup>
 
-</Project>
+</Project>	

@@ -7,6 +7,6 @@
        
             <local:UserToAlignmentConverter x:Key="UserToAlignmentConverter"/>
             <local:SenderColorConverter x:Key="SenderColorConverter"/>
-
+        <local:UserToColorConverter x:Key="UserToColorConverter"/>
     </Application.Resources>
 </Application>
