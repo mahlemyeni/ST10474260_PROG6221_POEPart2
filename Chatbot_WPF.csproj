@@ -1,0 +1,29 @@
+﻿   <Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Blue.drawio.png" />
+    <None Remove="Pink.drawio.png" />
+    <None Remove="PROGTITLE_IMAGE.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Windows.Extensions" Version="10.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.10" />
+	<PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="8.0.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Blue.drawio.png" />
+    <Resource Include="Pink.drawio.png" />
+    <Resource Include="PROGTITLE_IMAGE.jpg" />
+  </ItemGroup>
+
+</Project>	
