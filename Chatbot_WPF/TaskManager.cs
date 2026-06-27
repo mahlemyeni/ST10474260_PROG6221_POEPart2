@@ -8,7 +8,7 @@ namespace Chatbot_WPF
         private TaskStorageHelper _storage;
         private ActivityLogger _logger;
 
-        public TaskManager(ActivityLogger logger = null)
+        public TaskManager(ActivityLogger? logger = null)
         {
             _storage = new TaskStorageHelper();
             _logger = logger;
