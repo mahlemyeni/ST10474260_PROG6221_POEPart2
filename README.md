@@ -118,7 +118,14 @@ Chatbot_WPF/
 ├── greeting.wav
 ├── App.xaml
 ├── App.xaml.cs
-│
+├── ApplicationDbContext.cs
+├── TaskItem.cs
+├── LogEntry.cs
+├── QuizQuestion.cs
+├── TaskStorageHelper.cs
+├── TaskManager.cs
+├── ActivityLogger.cs
+├── QuizManager.cs
 ├── Properties/
 │
 └── .github/
@@ -258,3 +265,22 @@ Potential future enhancements include:
 ---
 for guidance and learning materials used throughout the development of this project.
 
+# ADDITION TO PART THREE OF POE
+
+## DATABASE & ENTITY FRAMEWORK (4 files)
+
+Files Added: 
+* ApplicationDbContext.cs - EF Core database context connecting to SQLite
+* TaskItem.cs - Task model with properties: Id, Title, Description, Reminder, IsComplete, CreatedAt 
+* LogEntry.cs - Log entry model with: Id, Description, CreatedAt
+* QuizQuestion.cs - Quiz question model with: Question, Options, CorrectAnswer, Explanation, IsTrueFalse
+
+## BUSINESS LOGIC LAYER 
+* TaskStorageHelper.cs - CRUD operations for tasks (LoadTasks, AddTask, MarkAsComplete, DeleteTask, SaveTask)
+* TaskManager.cs - Coordinates task operations and calls
+* ActivityLogger.cs - Records all actions to database, retrieves recent logs (5-10) or full log
+* QuizManager.cs - Manages 5 quiz questions, scoring, feedback, and final messages
+
+## UI LAYER
+* MainWindow.xaml - UI with 3 tabs: Tasks, Quiz, Activity Log + Chat
+* MainWindow.xaml.cs - Event handlers + NLP intent detection + Quiz/Task/Log integration
